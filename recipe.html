@@ -20,6 +20,28 @@
     .info-list li { display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0; }
     mark { background: #fff0a6; padding: 0 .2em; }
     footer { margin-top: 2rem; font-size: 0.9rem; color: #666; }
+    .nutrition table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nutrition th,
+.nutrition td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.nutrition th {
+  background: #f7f7f7;
+}
+.small {
+  font-size: 0.95rem;
+}
+
+.muted {
+  color: #666;
+}
   </style>
 </head>
 <body>
@@ -94,6 +116,20 @@
       <li>Use similar-sized chicken breasts for even cooking.</li>
     </ul>
     <p>Source: <cite><a href="https://thehappyfoodie.co.uk/books/how-to-make-anything-in-an-air-fryer-easy-dinners/" target="_blank">How to Make Anything in an Air Fryer</a></cite> by Hayley Dean.</p>
+    <section class="nutrition" aria-labelledby="nutrition">
+      <h2 id="nutrition">Nutrition (approx. per serving)</h2>
+      <table>
+        <thead><tr><th>Nutrient</th><th>Amount</th></tr></thead>
+        <tbody>
+          <tr><td>Calories</td><td>~549 kcal</td></tr>
+          <tr><td>Protein</td><td>High</td></tr>
+          <tr><td>Carbohydrates</td><td>Moderate</td></tr>
+          <tr><td>Fat</td><td>Moderate</td></tr>
+          <tr><td>Sodium</td><td>Varies with bacon and sauce</td></tr>
+        </tbody>
+      </table>
+      <p class="small muted"><em>Values are estimates; check packaging for exact numbers.</em></p>
+    </section>
   </main>
 
   <footer>
